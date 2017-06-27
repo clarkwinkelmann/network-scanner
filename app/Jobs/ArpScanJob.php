@@ -16,7 +16,7 @@ class ArpScanJob implements ShouldQueue
 
     public function handle()
     {
-        $scan = explode("\n", shell_exec('arp-scan --localnet'));
+        $scan = explode("\n", shell_exec(env('ARP_SCAN_COMMAND', 'arp-scan --localnet')));
         $time = Carbon::now();
 
         foreach ($scan as $line) {
