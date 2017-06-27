@@ -1,0 +1,34 @@
+{
+    "devices": [
+        {
+            "type": "router",
+            "model": "Motorola Router",
+            "name": "Router",
+            "interfaces": [
+                {
+                    "type": "lan",
+                    "mac": "ab:cd:ef:01:23:45",
+                    "ip": {
+                        "type": "static",
+                        "value": "192.168.1.1"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "desktop",
+            "model": "ASUS Barebone",
+            "name": "Super PC",
+            "owner": "John",
+            "interfaces": [
+                {
+                    "type": "wlan",
+                    "mac": "ab:cd:ef:02:34:56",
+                    "ip": {
+                        "type": "dhcp"
+                    }
+                }
+            ]
+        }
+    ]
+}
